@@ -1,0 +1,155 @@
+.body{
+    background-image: url(../img/bg-body.png);
+    background-repeat: repeat;
+    margin: 0px 80px;
+}
+
+.bloqueLinks{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    align-self: flex-end;
+    color: white;
+}
+.login{
+    text-decoration: none;
+    color: black;
+}
+
+.bloqueLogo{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.logo{
+    width: 395px;
+    height: 180px;
+}
+.bloqueOpciones{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    border: 20px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+
+.textoOpciones{
+    text-decoration: none;
+    color: white;
+    background-color: rgb(61, 61, 61);
+    height: 50px;
+    width: 180px;
+    text-align: center;
+    line-height: 50px;
+}
+.bloqueBanner{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+
+}
+.section{
+display: flex;
+flex-wrap: nowrap;
+flex-direction: row;
+justify-content: space-between;
+margin-top: 30px;
+width: 100%;
+}
+.article1{
+display: flex;
+flex-wrap: wrap;
+flex-direction: column;
+max-width: 380px;
+font-family: 'Montserrat', sans-serif;
+color: whitesmoke;
+}
+.article2{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    max-width: 380px;
+    font-family: 'Montserrat', sans-serif;
+    color: whitesmoke;
+    }
+.article3{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        max-width: 380px;
+        font-family: 'Montserrat', sans-serif;
+        color: whitesmoke;
+        }
+main{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+.img{
+    height: 200px;
+}
+.verMas{
+    text-decoration: none;
+    color: white;
+    background-color: rgb(61, 61, 61);
+    align-self: flex-start;
+    padding: 10px;
+}
+.lorem{
+    font-size: larger;
+    color: whitesmoke;
+    font-weight: 900;
+}
+.bloqueOpciones{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    border: 20px;
+}
+footer{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 30px;
+    padding-bottom: 20px;
+    padding-top: 10px;
+    background-color: rgb(61, 61, 61);
+    border-top-left-radius: 60px;
+    border-top-right-radius: 60px;
+}
+.textoFooter{
+    text-decoration: none;
+    color: white;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+}
+#novedades{
+    color: white;
+    text-align: center;
+    font-family: 'Bebas Neue', cursive;
+    background-color: rgb(61, 61, 61);
+}
+#quienesSomos{
+    color: white;
+    text-align: center;
+    font-family: 'Bebas Neue', cursive;
+    background-color: rgb(61, 61, 61);
+
+}
+.quienes{
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+}
+.iframe{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+}
