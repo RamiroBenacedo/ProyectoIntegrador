@@ -1,36 +1,61 @@
+
+/* htmls en gral*/
 *{
     box-sizing: border-box;
 }
+
+
 .body{
     background-image: url(../img/bg-body.png);
     background-repeat: repeat;
+}
+main{
     margin: 0px 80px;
 }
+.header{
+
+display: flex;
+align-items: center;
+justify-content: space-between;
+background-color: rgb(61, 61, 61);
+margin-bottom: 20px;
+}
+/* Header */
 
 .bloqueLinks{
     display: flex;
     flex-wrap: wrap;
     justify-content: flex-end;
-    align-self: flex-end;
     color: white;
 }
-.login{
-    text-decoration: none;
-    color: black;
-}
+/* Logo */
 
 .bloqueLogo{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
 }
+
 .logo{
-    width: 395px;
-    height: 180px;
+    width: 200px;
+    height: 90px;
 }
+
+/* Banner */
+
+.bloqueBanner{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+}
+
+/* Nav */
+
 .bloqueOpciones{
     display: flex;
     flex-wrap: wrap;
+    flex-direction: column;
     justify-content: space-between;
     margin-top: 30px;
     margin-bottom: 20px;
@@ -38,34 +63,31 @@
     font-family: 'Montserrat', sans-serif;
 }
 
-
 .textoOpciones{
     text-decoration: none;
     color: white;
-    background-color: rgb(61, 61, 61);
-padding: 5px 40px;
+    background-color: rgb(183, 183, 183);
+padding: 5px 20px;
     text-align: center;
     line-height: 40px;
+    border: solid 2px rgb(61, 61, 61);
 }
 
 .BusquedaCanciones{
 display: flex;
-margin-bottom: 20px;
+
 justify-content: space-between;
 width: 33%;
 }
 .Lupita{
     color: white;
 
-    line-height: 5px;
+  
 
 }
-.bloqueBanner{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    width: 100%;
 
+#novedades{
+    width: 100%;
 }
 .section{
 display: flex;

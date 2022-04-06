@@ -20,7 +20,12 @@
 
 <body class="body">
 
-    <header>
+    <header class="header">
+
+        <div class="bloqueLogo">
+            <img src="./img/logo.jpg" alt="" class="logo">
+        </div>
+
         <div class="bloqueLinks">
             <form action="results.html" method="get">
                 <div>
@@ -37,9 +42,7 @@
             </form>
 
         </div>
-        <div class="bloqueLogo">
-            <img src="./img/logo.jpg" alt="" class="logo">
-        </div>
+        
         <div>
             <span class="bloqueOpciones">
                 <a href="" class="textoOpciones">HOME</a>
@@ -48,20 +51,21 @@
                 <a href="" class="textoOpciones">GENEROS</a>
                 <a href="" class="textoOpciones">DETALLES DEL GENERO</a>
 
-            </span>
+            </span></div>
             <div>                
                 <form action="resultadosBusqueda.html" method="get" class="BusquedaCanciones">
-                <label class="Lupita" for="cancion"><i class="fa-solid fa-magnifying-glass"> Buscar:</i></label>
+                <label class="Lupita" for="cancion"><i class="fa-solid fa-magnifying-glass"></i></label>
                 <input type="text" id="cancion" name="cancion" value="">
                 <button type="submit">Enviar</button>
             </form></div>
         </div>
-        <div class="bloqueBanner">
-            <img src="./img/img-banner.jpg" alt="" class="bloqueBanner">
-        </div>
+        
     </header>
 
     <main>
+        <div class="bloqueBanner">
+            <img src="./img/img-banner.jpg" alt="" class="bloqueBanner">
+        </div>
         <h1 id="novedades">Novedades Abril 2022</h1>
         <section class="section">
             <article class="article">
