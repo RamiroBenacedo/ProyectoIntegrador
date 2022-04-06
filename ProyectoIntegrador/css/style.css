@@ -169,7 +169,7 @@ footer{
         display: flex;
         flex-wrap: nowrap;
         justify-content:space-between;
-        
+
     }
     .cancionesmasescuchadas{
         color: white;
@@ -179,6 +179,11 @@ footer{
     }
     .videos{
         
+        height: 200px;
+        border: solid 1px white;
+        width: 230px;
+    }
+    .fotodiscos{
         height: 200px;
         border: solid 1px white;
         width: 230px;
