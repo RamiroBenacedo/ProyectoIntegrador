@@ -154,3 +154,32 @@ footer{
     justify-content: center;
     width: 100%;
 }
+    .articlecanc{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-top: 30px;
+    width: 100%;
+    max-width: 360px;
+    font-family: 'Montserrat', sans-serif;
+    color: whitesmoke;
+    }
+    .cancionesenoferta{
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content:space-between;
+        
+    }
+    .cancionesmasescuchadas{
+        color: white;
+        text-align: center;
+        font-family: 'Bebas Neue', cursive;
+        background-color: rgb(61, 61, 61);
+    }
+    .videos{
+        
+        height: 200px;
+        border: solid 1px white;
+        width: 230px;
+    }
