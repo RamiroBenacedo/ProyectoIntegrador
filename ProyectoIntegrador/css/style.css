@@ -1,3 +1,6 @@
+*{
+    box-sizing: border-box;
+}
 .body{
     background-image: url(../img/bg-body.png);
     background-repeat: repeat;
@@ -31,7 +34,7 @@
     justify-content: space-between;
     margin-top: 30px;
     margin-bottom: 20px;
-    border: 20px;
+
     font-family: 'Montserrat', sans-serif;
 }
 
@@ -40,10 +43,22 @@
     text-decoration: none;
     color: white;
     background-color: rgb(61, 61, 61);
-    height: 50px;
-    width: 180px;
+padding: 5px 40px;
     text-align: center;
-    line-height: 50px;
+    line-height: 40px;
+}
+
+.BusquedaCanciones{
+display: flex;
+margin-bottom: 20px;
+justify-content: space-between;
+width: 33%;
+}
+.Lupita{
+    color: white;
+
+    line-height: 5px;
+
 }
 .bloqueBanner{
     display: flex;
@@ -60,30 +75,15 @@ justify-content: space-between;
 margin-top: 30px;
 width: 100%;
 }
-.article1{
+.article{
 display: flex;
 flex-wrap: wrap;
 flex-direction: column;
-max-width: 380px;
+max-width: 360px;
 font-family: 'Montserrat', sans-serif;
 color: whitesmoke;
 }
-.article2{
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-    max-width: 380px;
-    font-family: 'Montserrat', sans-serif;
-    color: whitesmoke;
-    }
-.article3{
-        display: flex;
-        flex-wrap: wrap;
-        flex-direction: column;
-        max-width: 380px;
-        font-family: 'Montserrat', sans-serif;
-        color: whitesmoke;
-        }
+
 main{
     display: flex;
     flex-wrap: wrap;
@@ -91,6 +91,7 @@ main{
 }
 .img{
     height: 200px;
+    border: solid 1px white;
 }
 .verMas{
     text-decoration: none;
