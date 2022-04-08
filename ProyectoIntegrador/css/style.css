@@ -210,3 +210,21 @@ footer{
         border: solid 1px white;
         width: 230px;
     }
+    .duko{
+    display: flex;
+    flex-wrap: wrap;
+    align-self: center;
+    max-width: 100% ;
+    }
+    #duki{
+        font-family: 'Montserrat', sans-serif;
+        color: whitesmoke;
+        text-align: center;
+        background-color: rgb(61, 61, 61);
+    }
+    .lista{
+        font-family: 'Montserrat', sans-serif;
+        color: whitesmoke;
+        text-align: center;
+        
+    }
