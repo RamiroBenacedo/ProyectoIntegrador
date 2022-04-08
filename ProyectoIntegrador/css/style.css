@@ -210,3 +210,46 @@ footer{
         border: solid 1px white;
         width: 230px;
     }
+    .videosdetallecanc{
+        border: solid 1px white;
+        width: 500px;
+        height: 300px;
+        display: block;
+        flex-wrap: wrap;
+        justify-content:center;
+
+    }
+
+.textodetacanc{
+    color: white;
+        text-align: center;
+        font-family: 'Bebas Neue', cursive;
+}
+.fotodetallecanc{
+    border: solid 1px white;
+    width: 500px;
+    height: 500px;
+    display: block;
+    flex-wrap: wrap;
+    justify-content:center;
+}
+.playlistdet{
+    text-decoration: none;
+    color: white;
+    background-color: rgb(255, 0, 0);
+    align-self: flex-start;
+    padding: 10px;}
+    .divdetalle{
+        display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    }
+    .cajapadredetalle{
+        display: flex;
+        justify-content: center;
+
+    }
+    .cajapadrefotodetalle{
+            display: flex;
+            justify-content: center;
+    }
