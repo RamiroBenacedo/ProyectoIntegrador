@@ -6,7 +6,7 @@
 }
 a{
     text-decoration: none;
-    color: black;
+    color: whitesmoke;
 }
 
 body{
@@ -214,13 +214,24 @@ footer{
         border: solid 1px white;
         width: 230px;
     }
-    .videosdetallecanc{
-        border: solid 1px white;
-        width: 500px;
-        height: 300px;
-        display: block;
-        flex-wrap: wrap;
-        justify-content:center;
+
+    .duko{
+    display: flex;
+    flex-wrap: wrap;
+    align-self: center;
+    max-width: 100% ;
+    }
+    #duki{
+        font-family: 'Montserrat', sans-serif;
+        color: whitesmoke;
+        text-align: center;
+        background-color: rgb(61, 61, 61);
+    }
+    .lista{
+        font-family: 'Montserrat', sans-serif;
+        color: whitesmoke;
+        text-align: center;
+        
 
     }
 
@@ -257,3 +268,15 @@ footer{
             display: flex;
             justify-content: center;
     }
+    #div-detalle-album{
+
+        background-color: rgb(61, 61, 61);
+        margin-bottom: 10px ;
+    }
+    .ol{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+
+
