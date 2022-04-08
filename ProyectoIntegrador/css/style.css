@@ -2,8 +2,12 @@
 /* htmls en gral*/
 *{
     box-sizing: border-box;
-}
 
+}
+a{
+    text-decoration: none;
+    color: black;
+}
 
 body{
     background-image: url(../img/bg-body.png);
