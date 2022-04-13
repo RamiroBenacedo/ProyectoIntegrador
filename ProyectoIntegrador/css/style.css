@@ -325,3 +325,18 @@ color: white;
 a:hover{
     color: red;
     }
+
+.sub-generos{
+    font-family: 'Bebas Neue', cursive;
+    display: flex;
+    
+    justify-content: flex-start;
+    color: white;
+}
+.sub-generos2{
+    font-size: 30px;
+
+    padding: 10px 20px;
+ 
+    background-color: rgb(61, 61, 61);
+}
