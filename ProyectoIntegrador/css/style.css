@@ -322,3 +322,6 @@ color: white;
     margin-top: 3vh;
     font-family: 'Bebas Neue', cursive;
 }
+a:hover{
+    color: red;
+    }
