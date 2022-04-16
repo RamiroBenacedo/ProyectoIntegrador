@@ -195,7 +195,7 @@ footer{
     .cancionesenoferta{
         display: flex;
         flex-wrap: nowrap;
-        justify-content:space-between;
+        justify-content:center;
 
     }
     .cancionesmasescuchadas{
@@ -203,6 +203,7 @@ footer{
         text-align: center;
         font-family: 'Bebas Neue', cursive;
         background-color: rgb(61, 61, 61);
+        margin: 15px 10px;
     }
     .videos{
         
@@ -340,4 +341,31 @@ a:hover{
  
     background-color: rgb(61, 61, 61);
 }
+.headerdetcan{
 
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: rgb(61, 61, 61);
+    margin-bottom: 20px;
+    }
+
+    @media(min:460px) {
+    .bodydetcan{
+    height: 100vh;
+    overflow: auto;}
+    .bloqueOpciones{
+        overflow: hidden;
+    }
+    .headerdetcan{
+        max-height: 20vh;
+    }
+    .bloqueFooter{
+        display: block;
+        flex-wrap: nowrap;
+        justify-content: center;
+
+
+    }
+
+}
