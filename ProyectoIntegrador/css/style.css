@@ -370,9 +370,19 @@ a:hover{
     .bloqueFooter{
         display: block;
         flex-wrap: nowrap;
-        justify-content: center;
+        justify-content: center;}
+    #duki{
+        display: flex;
+        flex-wrap: nowrap;
+    }
+.duko{
+    width: auto;
+    height: auto;
 
-
+}
+    .listita{
+        display: flex;
+        flex-wrap: nowrap;
     }
 
 }
