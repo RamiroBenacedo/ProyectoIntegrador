@@ -13,12 +13,10 @@ body{
     background-image: url(../img/bg-body.png);
     background-repeat: repeat;
 }
-main{
-    margin: 0px 80px;
-}
 .header{
 
 display: flex;
+flex-direction: row;
 align-items: center;
 justify-content: space-between;
 background-color: rgb(61, 61, 61);
@@ -59,7 +57,7 @@ margin-bottom: 20px;
 .bloqueOpciones{
     display: flex;
     flex-wrap: wrap;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: space-between;
     margin-top: 30px;
     margin-bottom: 20px;
@@ -97,7 +95,7 @@ width: 33%;
 display: flex;
 flex-wrap: nowrap;
 flex-direction: row;
-justify-content: space-between;
+justify-content: space-around;
 margin-top: 30px;
 width: 100%;
 }
@@ -132,14 +130,7 @@ main{
     color: whitesmoke;
     font-weight: 900;
 }
-.bloqueOpciones{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    margin-top: 30px;
-    margin-bottom: 20px;
-    border: 20px;
-}
+
 footer{
     display: flex;
     flex-wrap: wrap;
@@ -241,8 +232,17 @@ footer{
     color: white;
         text-align: center;
         font-family: 'Bebas Neue', cursive;
+
 }
 .fotodetallecanc{
+    border: solid 1px white;
+    width: 500px;
+    height: 500px;
+    display: block;
+    flex-wrap: wrap;
+    justify-content:center;
+}
+.videodetallecanc{
     border: solid 1px white;
     width: 500px;
     height: 500px;
@@ -268,10 +268,7 @@ footer{
         justify-content: center;
 
     }
-    .cajapadrefotodetalle{
-            display: flex;
-            justify-content: center;
-    }
+
     .Div-Titulo-Detalle-Album{
 display: flex;
 justify-content: center;
@@ -357,32 +354,76 @@ a:hover{
 
     }
     
-    @media(min:460px) {
-    .bodydetcan{
-    height: 100vh;
-    overflow: auto;}
-    .bloqueOpciones{
-        overflow: hidden;
+    
+    @media screen and (max-width:600px) {
+        
+     main{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+     }   
+
+    .header{
+    display:flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
     }
-    .headerdetcan{
-        max-height: 20vh;
+    .bloqueOpciones {
+        display: flex;
+        flex-direction: column;
+        margin-top: 30px;
+        margin-bottom: 20px;
+        font-family: 'Montserrat', sans-serif;
+        align-content: flex-start;
+        flex-wrap: wrap;
+        justify-content: flex-start;}
+        
+        .section {
+            display: flex;
+            flex-wrap: nowrap;
+            flex-direction: column;
+            justify-content: space-around;
+            margin-top: 30px;
+            width: 100%;
+        }
+        .cancionesmasescuchadas {
+            color: white;
+            text-align: center;
+            font-family: 'Bebas Neue', cursive;
+            background-color: rgb(61, 61, 61);
+            margin: 15px 10px;
+            width: 100%;
+        }
+        .cancionesenoferta {
+            display: flex;
+            flex-wrap: nowrap;
+            justify-content: center;
+            flex-direction: column;
+            align-content: center;
+            align-items: center;
+        }
+
+    .fotodetallecanc{
+    border: solid 1px white;
+    width: 90%;
+    height: auto;
+    display: block;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 0 auto;
     }
     .bloqueFooter{
-        display: block;
-        flex-wrap: nowrap;
-        justify-content: center;}
-    #duki{
-        display: flex;
-        flex-wrap: nowrap;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top:10px;
     }
-.duko{
-    width: auto;
-    height: auto;
-
+.textodetacanc{
+    color: white;
+    text-align: center;
+    font-family: 'Bebas Neue', cursive;
 }
-    .listita{
-        display: flex;
-        flex-wrap: nowrap;
-    }
 
 }
