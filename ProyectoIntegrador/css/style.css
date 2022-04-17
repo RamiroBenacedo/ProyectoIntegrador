@@ -350,6 +350,13 @@ a:hover{
     margin-bottom: 20px;
     }
 
+    .cancionesenoferta2{
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content:space-between;
+
+    }
+    
     @media(min:460px) {
     .bodydetcan{
     height: 100vh;
