@@ -330,7 +330,7 @@ a:hover{
     font-family: 'Bebas Neue', cursive;
     display: flex;
     
-    justify-content: flex-start;
+    justify-content: space-evenly;
     color: white;
 }
 .sub-generos2{
@@ -339,6 +339,7 @@ a:hover{
     padding: 10px 20px;
  
     background-color: rgb(61, 61, 61);
+
 }
 .headerdetcan{
 
@@ -392,6 +393,14 @@ a:hover{
             width: 100%;
         }
         .cancionesenoferta {
+            display: flex;
+            flex-wrap: nowrap;
+            justify-content: center;
+            flex-direction: column;
+            align-content: center;
+            align-items: center;
+        }
+        .cancionesenoferta2 {
             display: flex;
             flex-wrap: nowrap;
             justify-content: center;
