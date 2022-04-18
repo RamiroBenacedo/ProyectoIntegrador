@@ -276,6 +276,8 @@ background-color: rgb(61, 61, 61);
 font-family: 'Montserrat', sans-serif;
 margin-bottom: 30px;
 color: white;
+width: 100%;
+text-align: center;
     }
 .Logo-Duketo{
     display: flex;
@@ -385,6 +387,7 @@ a:hover{
             flex-wrap: nowrap;
             flex-direction: column;
             justify-content: space-around;
+            align-items: center;
             margin-top: 30px;
             width: 100%;
         }
@@ -425,5 +428,29 @@ a:hover{
     text-align: center;
     font-family: 'Bebas Neue', cursive;
 }
-
+.Logo-Duketo{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    }
+    .main-detalle-album{
+        width: 100%;
+    }
+#div-detalle-album{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.imagen-duki{
+    width: 100%;
+}
+.DUki-tranquilo{
+width: 100%;
+height: 30vh;
+}
+.h2-detalle{
+    font-size: 15px;
+}
 }
