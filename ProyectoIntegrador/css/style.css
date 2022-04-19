@@ -124,6 +124,7 @@ main{
     color: white;
     background-color: rgb(61, 61, 61);
     padding: 10px;
+    border-radius: 20px;
 }
 .lorem{
     font-size: larger;
