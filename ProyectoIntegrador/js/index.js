@@ -33,20 +33,23 @@ fetch(url)
              <a href="${artistas[i].tracklist}" class="verMas">Ver Más</a>
          </article>`
         
-         contenedor3.innerHTML += `            
-         <article class="article">
-         <a href="./detalle-artistas.html"> <img src="${artistas[i].picture_medium}" alt="" class="img"></a>
-          <a href="./detalle-artistas.html"><p class="lorem">${artistas[i].name}</p></a>
-          <a href="${artistas[i].tracklist}" class="verMas">Ver Más</a>
-      </article>`
-
-      contenedor4.innerhtml += `           
+      contenedor4.innerHTML += `           
       <article class="articlecanc">
       <iframe width="560" height="315" class="videos" src="${canciones[i].link}" frameborder="0"></iframe>
       <h4>${canciones[i].title}</h4>
       <p>${canciones[i].artist.name}</p>
       <a href="./detalle-cancion.html" class="verMas">Ver más</a>
   </article>`
+        }
+        for (let i = 5; i < 10; i++) {
+
+            contenedor3.innerHTML += `            
+            <article class="article">
+            <a href="./detalle-artistas.html"> <img src="${artistas[i].picture_medium}" alt="" class="img"></a>
+             <a href="./detalle-artistas.html"><p class="lorem">${artistas[i].name}</p></a>
+             <a href="${artistas[i].tracklist}" class="verMas">Ver Más</a>
+         </article>`
+            
         }
     })
     .catch(function(error){
