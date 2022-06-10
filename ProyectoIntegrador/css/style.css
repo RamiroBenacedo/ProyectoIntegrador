@@ -74,6 +74,25 @@ padding: 5px 20px;
     border: solid 2px rgb(61, 61, 61);
 }
 
+#tutiodos{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+    width: 100%;
+    max-width: 360px;
+    font-family: 'Montserrat', sans-serif;
+    color: whitesmoke;
+}
+.maindetalle{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-content: center;
+    justify-content:center;
+}
 .BusquedaCanciones{
 display: flex;
 
@@ -82,9 +101,6 @@ width: 33%;
 }
 .Lupita{
     color: white;
-
-  
-
 }
 
 #novedades{

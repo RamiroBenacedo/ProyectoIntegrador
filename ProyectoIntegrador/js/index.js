@@ -35,10 +35,10 @@ fetch(url)
         
       contenedor4.innerHTML += `           
       <article class="articlecanc">
-      <iframe width="560" height="315" class="videos" src="${canciones[i].link}" frameborder="0"></iframe>
+      <img width="560" height="315" class="videos" src="${canciones[i].album.cover_xl}" frameborder="0"></iframe>
       <h4>${canciones[i].title}</h4>
       <p>${canciones[i].artist.name}</p>
-      <a href="./detalle-cancion.html" class="verMas">Ver más</a>
+      <a href="./detalle-cancion.html?id=${canciones[i].id}" class="verMas">Ver más</a>
   </article>`
         }
         for (let i = 5; i < 10; i++) {
