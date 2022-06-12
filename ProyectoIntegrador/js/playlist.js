@@ -1,11 +1,13 @@
 let recuperoStorage = localStorage.getItem('favoritos');
 let favoritos = JSON.parse(recuperoStorage);
+console.log(favoritos)
 
 let section = document.querySelector('.lista');
 let personajesFavoritos = '';
-if (favoritos != null || favoritos.length == 0) {
+if (favoritos == null || favoritos.length == 0) {
     section.innerHTML = '<p>No hay favoritos actualmente</p>';
 }else{
+    console.log(favoritos)
 for (let i = 0; i < favoritos.length; i++) {
 const url = `https://api.allorigins.win/raw?url=https://api.deezer.com/track/${favoritos[i]}`;
     fetch(url)

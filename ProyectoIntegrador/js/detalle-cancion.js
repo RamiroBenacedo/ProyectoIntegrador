@@ -5,7 +5,8 @@ console.log(id)
 let urluno = `https://api.allorigins.win/raw?url=https://api.deezer.com/track/${id}`;
 
 let contenedor4 = document.querySelector("#tutiodos");
-fetch(urluno)
+if(id !== null){
+    fetch(urluno)
     .then(function(response){
     return response.json();
     })
@@ -55,3 +56,6 @@ localStorage.setItem('favoritos', favsJSON)
 
 
     
+} else {
+    window.location.href = "index.html";
+}

@@ -28,9 +28,9 @@ fetch(url)
     `
             contenedor2.innerHTML += `            
             <article class="article">
-            <a href="./detalle-artistas.html"> <img src="${artistas[i].picture_medium}" alt="" class="img"></a>
-             <a href="./detalle-artistas.html"><p class="lorem">${artistas[i].name}</p></a>
-             <a href="${artistas[i].tracklist}" class="verMas">Ver Más</a>
+            <a href="./detalle-artistas.html?id=${artistas[i].id}"> <img src="${artistas[i].picture_medium}" alt="" class="img"></a>
+             <a href="./detalle-artistas.html?id=${artistas[i].id}"><p class="lorem">${artistas[i].name}</p></a>
+             <a href="./detalle-artistas.html?id=${artistas[i].id}" class="verMas">Ver Más</a>
          </article>`
         
       contenedor4.innerHTML += `           
@@ -42,12 +42,12 @@ fetch(url)
   </article>`
         }
         for (let i = 5; i < 10; i++) {
-
+            let artistas = datos.artists.data;
             contenedor3.innerHTML += `            
             <article class="article">
-            <a href="./detalle-artistas.html"> <img src="${artistas[i].picture_medium}" alt="" class="img"></a>
-             <a href="./detalle-artistas.html"><p class="lorem">${artistas[i].name}</p></a>
-             <a href="${artistas[i].tracklist}" class="verMas">Ver Más</a>
+            <a href="./detalle-artistas.html?id=${artistas[i].id}"> <img src="${artistas[i].picture_medium}" alt="" class="img"></a>
+             <a href="./detalle-artistas.html?id=${artistas[i].id}"><p class="lorem">${artistas[i].name}</p></a>
+             <a href="./detalle-artistas.html?id=${artistas[i].id}" class="verMas">Ver Más</a>
          </article>`
             
         }
