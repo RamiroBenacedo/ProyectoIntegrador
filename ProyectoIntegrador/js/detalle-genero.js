@@ -22,39 +22,7 @@ if(id !== null){
     }).then(function(){
         let favoritos = [];
 
-let recuperoStorage = localStorage.getItem('favoritos');
 
-if (recuperoStorage != null) {
-favoritos = JSON.parse(recuperoStorage);
-}
-
-let fav = document.getElementById('fav') 
-console.log(fav)
-
-if (favoritos.includes(id)) {
-fav.innerText = "Quitar de favoritos"
-}
-
-fav.addEventListener('click', function(e){
-    e.preventDefault();
-    if (favoritos.includes(id)) {
-        let indice = favoritos.indexOf(id);
-        favoritos.splice(indice, 1)
-        fav.innerText = "Agregar a favoritos";
-    } else {
-        favoritos.push(id);
-        fav.innerText = "Quitar de favoritos";
-}
-let favsJSON = JSON.stringify(favoritos);
-localStorage.setItem('favoritos', favsJSON)
-})
-    })
-    .catch(function(error){
-        console.log("Error: " + error);
-    })
-
-
-    
 } else {
     window.location.href = "index.html";
 }
