@@ -15,8 +15,10 @@ if(id !== null){
       contenedor4.innerHTML += 
       `<article class="articlecanc">
       <iframe title="deezer-widget" src="https://widget.deezer.com/widget/dark/track/${cancion.id}" width="100%" height="300" frameborder="0" allowtransparency="true" allow="encrypted-media; clipboard-write"></iframe>
-      <h4>${cancion.title}</h4>
-      <p>${cancion.artist.name}</p>
+      <h2>${cancion.title}</h2>
+      <h3>${cancion.artist.name}</h3>
+      <h4>${cancion.album.title}</h4>
+      <img src="${cancion.album.cover_small}" alt="" class="imgcancion">
       <a href="" class="fav" id="fav">Agregar a la playlist</a>
       </article>`
         
