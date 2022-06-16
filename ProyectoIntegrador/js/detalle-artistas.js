@@ -32,7 +32,7 @@ let contenedor = document.querySelector("#tutiodos");
         for (let i = 0; i < 5; i++) {
             contenedor.innerHTML += `
         <article class="articlecanc">
-        <img src="${albumes.artist.title}" alt="" class="fotodiscos">
+        <img src="${albumes[i].cover}" alt="" class="fotodiscos">
         <h4>${albumes[i].title}</h4>
         <p>${albumes[i].artist.name}</p>
         <a href="./detalle-album.html" class="verMas">Ver más</a>

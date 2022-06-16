@@ -14,7 +14,7 @@ fetch(url)
         `<article class="articlecanc">\
         <img src="${generos.picture_medium}" alt="" class="fotodiscos">
         <h4>${generos.name}</h4>
-        <a href="./detalle-genero.html" class="verMas">Ver más</a>
+        <a href="./detalle-genero.html?id=${generos.id}" class="verMas">Ver más</a>
         </article>`
         
     })
