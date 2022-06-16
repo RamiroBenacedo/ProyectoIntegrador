@@ -21,10 +21,11 @@ fetch(urluno)
     else {
     window.location.href = "index.html"
 }
-let urldos = `https://api.allorigins.win/raw?url=https://api.deezer.com/album/${id}`
+let urldos = `https://api.allorigins.win/raw?url=https://api.deezer.com/artist/${id}/albums`
 let contenedor = document.querySelector("#tutiodos");
     fetch(urldos)
     .then(function(response){
+        console.log(response)
     return response.json();
     })
     .then(function(albumes){
