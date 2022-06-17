@@ -23,7 +23,7 @@ fetch(url)
         <img src="${albumes[i].cover}" alt="" class="fotodiscos">
         <h4>${albumes[i].title}</h4>
         <p>${albumes[i].artist.name}</p>
-        <a href="./detalle-album.html" class="verMas">Ver más</a>
+        <a href="./detalle-album.html?id=${albumes[i].id}" class="verMas">Ver más</a>
     </article>
     `
             contenedor2.innerHTML += `            
