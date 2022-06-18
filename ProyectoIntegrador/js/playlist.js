@@ -9,7 +9,7 @@ if (favoritos == null || favoritos.length == 0) {
 }else{
     console.log(favoritos)
 for (let i = 0; i < favoritos.length; i++) {
-const url = `https://api.allorigins.win/raw?url=https://api.deezer.com/track/${favoritos[i]}`;
+const url = `https://cors-anywhere.herokuapp.com/https://api.deezer.com/track/${favoritos[i]}`;
     fetch(url)
     .then(function(response){
         return response.json();

@@ -6,7 +6,7 @@ let objliteral = new URLSearchParams(cosasguardada)
 
 let resultados = objliteral.get("cancion")
 console.log(resultados);
-let url77 = `https://api.allorigins.win/raw?url=https://api.deezer.com/search?q=${resultados}`
+let url77 = `https://cors-anywhere.herokuapp.com/https://api.deezer.com/search?q=${resultados}`
 
 fetch(url77)
 

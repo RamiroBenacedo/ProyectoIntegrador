@@ -1,4 +1,4 @@
-let url = 'https://api.allorigins.win/raw?url=https://api.deezer.com/genre';
+let url = 'https://cors-anywhere.herokuapp.com/https://api.deezer.com/genre';
 
 for (let i = 1; i < 11; i++){
 fetch(url)

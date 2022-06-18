@@ -2,7 +2,7 @@ let qs = location.search;
 let qsto = new URLSearchParams(qs);
 let id = qsto.get('id');
 console.log(id)
-let urluno = `https://api.allorigins.win/raw?url=https://api.deezer.com/track/${id}`;
+let urluno = `https://cors-anywhere.herokuapp.com/https://api.deezer.com/track/${id}`;
 
 let contenedor4 = document.querySelector("#tutiodos");
 if(id !== null){

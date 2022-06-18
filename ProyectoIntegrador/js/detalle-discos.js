@@ -4,7 +4,7 @@ let qsto = new URLSearchParams(qs)
 
 let id77 = qsto.get("id")
 
-let url = `https://api.allorigins.win/raw?url=https://api.deezer.com/album/${id77}`
+let url = `https://cors-anywhere.herokuapp.com/https://api.deezer.com/album/${id77}`
 
 let main = document.querySelector(".tutio3")
 
