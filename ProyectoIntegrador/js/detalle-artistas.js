@@ -19,10 +19,9 @@ fetch(urluno)
         <h3 class="lorem">${artista.name}</h3>
         </article>`})}
     else {
-    window.location.href = "index.html"
 }
-let urldos = `https://api.allorigins.win/raw?url=https://api.deezer.com/artist/${id}/albums`
-let contenedor = document.querySelector("#tutiodos");
+let urldos = `https://cors-anywhere.herokuapp.com/https://api.deezer.com/artist/${id}/albums`
+let contenedor5 = document.querySelector("#tutiodos");
     fetch(urldos)
     .then(function(response){
         console.log(response)
@@ -31,11 +30,11 @@ let contenedor = document.querySelector("#tutiodos");
     .then(function(albumes){
         console.log(albumes)
         for (let i = 0; i < 5; i++) {
-            contenedor.innerHTML += `
+            contenedor5.innerHTML += `
         <article class="articlecanc">
-        <img src="${albumes[i].cover}" alt="" class="fotodiscos">
+        <img src="${albumes[i].cover_medium}" alt="" class="fotodiscos">
         <h4>${albumes[i].title}</h4>
-        <p>${albumes[i].artist.name}</p>
+        <p>${albumes[i].data.release_date}</p>
         <a href="./detalle-album.html" class="verMas">Ver más</a>
     </article>
     `

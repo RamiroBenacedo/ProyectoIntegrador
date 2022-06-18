@@ -85,6 +85,17 @@ padding: 5px 20px;
     font-family: 'Montserrat', sans-serif;
     color: whitesmoke;
 }
+#tutiotres{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 30px;
+    width: 100%;
+    font-family: 'Montserrat', sans-serif;
+    color: whitesmoke;
+}
 .sectiongenero{
     display: flex;
     flex-wrap: wrap;
