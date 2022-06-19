@@ -22,7 +22,7 @@ fetch(urluno)
 
 
 let urldos = `https://cors-anywhere.herokuapp.com/https://api.deezer.com/artist/${id}/albums`
-let contenedor5 = document.querySelector("#tutiodos");
+let contenedor5 = document.querySelector("#tutiotres");
     fetch(urldos)
     .then(function(response){
         console.log(response)
