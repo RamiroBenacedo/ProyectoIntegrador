@@ -2,7 +2,7 @@ let qs = location.search;
 let qsto = new URLSearchParams(qs);
 let id = qsto.get('id');
 console.log(id)
-if(id !== null){
+
 let urluno = `https://cors-anywhere.herokuapp.com/https://api.deezer.com/artist/${id}`;
 
 let contenedor4 = document.querySelector("#tutiodos");
@@ -17,9 +17,10 @@ fetch(urluno)
         `<article class="articlecanc">
         <img src="${artista.picture_medium}" alt="" class="img">
         <h3 class="lorem">${artista.name}</h3>
-        </article>`})}
-    else {
-}
+        <h2>Algunos de los albuns donde participo:</h2>
+        </article>`})
+
+
 let urldos = `https://cors-anywhere.herokuapp.com/https://api.deezer.com/artist/${id}/albums`
 let contenedor5 = document.querySelector("#tutiodos");
     fetch(urldos)
@@ -32,10 +33,10 @@ let contenedor5 = document.querySelector("#tutiodos");
         for (let i = 0; i < 5; i++) {
             contenedor5.innerHTML += `
         <article class="articlecanc">
-        <img src="${albumes[i].cover_medium}" alt="" class="fotodiscos">
-        <h4>${albumes[i].title}</h4>
-        <p>${albumes[i].data.release_date}</p>
-        <a href="./detalle-album.html" class="verMas">Ver más</a>
+        <img src="${albumes.data[i].cover_medium}" alt="" class="fotodiscos">
+        <h4>${albumes.data[i].title}</h4>
+        <p>${albumes.data[i].release_date}</p>
+        <a href="./detalle-album.html?id=${albumes.data[i].id}" class="verMas">Ver más</a>
     </article>
     `
         }})
