@@ -394,6 +394,13 @@ a:hover{
     background-color: rgb(61, 61, 61);
     margin-bottom: 20px;
     }
+
+.pele{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
     
     
     @media screen and (max-width:600px) {
