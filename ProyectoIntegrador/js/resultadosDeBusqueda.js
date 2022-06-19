@@ -1,5 +1,7 @@
 let Resultado = document.querySelector(".queso")
 
+let pindonga = document.querySelector(".pele")
+
 let cosasguardada = location.search
 
 let objliteral = new URLSearchParams(cosasguardada)
@@ -21,7 +23,7 @@ fetch(url77)
         Resultado.innerHTML = `<h1 id="duki">Resultados de Busqueda para: ${resultados}</h1>` 
         for (let i = 0; i <= imp.length; i++) {
 
-            Resultado.innerHTML += `<a href="./detalle-cancion.html?id=${imp[i].id}">${imp[i].title}</a>`
+            pindonga.innerHTML += `<a class="elgrillo" href="./detalle-cancion.html?id=${imp[i].id}">${imp[i].title}</a>`
           }
     }
     else{  Resultado.innerHTML += `<h1 id="duki">No Encontramos Resultados de Busqueda para: ${resultados}</h1>`     
