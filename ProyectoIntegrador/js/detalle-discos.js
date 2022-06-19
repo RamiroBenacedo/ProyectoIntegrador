@@ -19,7 +19,7 @@ let pepe = datos.genres.data
 let tutia = datos.tracks.data
 main.innerHTML = `    <div class="Div-Titulo-Detalle-Album"><h1>Detalle del Album: ${datos.title}</h1></div>
 <div class="Logo-Duketo div">
-    <img class="Imagen-Album-Duketo" src="${datos.cover_big}" alt="Imagen del Duketo">
+    <img class="duki-tranquilo" src="${datos.cover_big}" alt="Imagen del Duketo">
 </div>
 
 <article class="main-detalle-album">
