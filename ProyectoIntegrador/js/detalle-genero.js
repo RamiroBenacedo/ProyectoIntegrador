@@ -35,6 +35,7 @@ fetch(urlo)
         <article class="articlecanc">
         <img src="${artistas.data[i].picture_medium}" alt="" class="fotodiscos">
         <h4>${artistas.data[i].name}</h4>
+        <a href="./detalle-artistas.html?id=${artistas.data[i].id}" class="verMas">Ver más</a>
     </article>`}})
     }else {
 }

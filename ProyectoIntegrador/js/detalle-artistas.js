@@ -17,7 +17,6 @@ fetch(urluno)
         `<article class="articlecanc">
         <img src="${artista.picture_medium}" alt="" class="img">
         <h3 class="lorem">${artista.name}</h3>
-        <h2>Algunos de los albuns donde participo:</h2>
         </article>`})
 
 
