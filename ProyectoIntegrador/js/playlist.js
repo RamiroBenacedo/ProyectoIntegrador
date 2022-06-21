@@ -1,12 +1,16 @@
+/*Obtenemos la información del local storage*/
 let recuperoStorage = localStorage.getItem('favoritos');
 let favoritos = JSON.parse(recuperoStorage);
 console.log(favoritos)
-
+/*Capturamos el elemento al que se agregara el article*/
 let section = document.querySelector('.lista');
 let personajesFavoritos = '';
+/*Se hace un condicional que determina si favoritos está vacío o no*/
 if (favoritos == null || favoritos.length == 0) {
+    /*Si favoritos está vacío se mostrará un texto que diga que la playlist está vacía*/
     section.innerHTML = '<p>No hay favoritos actualmente</p>';
 }else{
+    /*En caso que no lo esté se ejecuta un bucle para mostrar los elementos presentes en favoritos*/
     console.log(favoritos)
 for (let i = 0; i < favoritos.length; i++) {
 const url = `https://cors-anywhere.herokuapp.com/https://api.deezer.com/track/${favoritos[i]}`;
