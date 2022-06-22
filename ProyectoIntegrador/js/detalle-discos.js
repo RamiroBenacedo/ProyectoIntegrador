@@ -1,23 +1,23 @@
-let qs = location.search
+let qs = location.search;
 
-let qsto = new URLSearchParams(qs)
+let qsto = new URLSearchParams(qs);
 
-let id77 = qsto.get("id")
+let id = qsto.get("id");
 
-let url = `https://cors-anywhere.herokuapp.com/https://api.deezer.com/album/${id77}`
+let url = `https://cors-anywhere.herokuapp.com/https://api.deezer.com/album/${id}`;
 
-let main = document.querySelector(".tutio3")
+let main = document.querySelector(".tutio3");
 
 fetch(url)
-.then(function(response) {
-return response.json();    
-})
-.then(function(datos) {
-console.log(datos);
+  .then(function (response) {
+    return response.json();
+  })
+  .then(function (datos) {
+    console.log(datos);
 
-let pepe = datos.genres.data
-let tutia = datos.tracks.data
-main.innerHTML = `    <div class="Div-Titulo-Detalle-Album"><h1>Detalle del Album: ${datos.title}</h1></div>
+    let pepe = datos.genres.data;
+    let tutia = datos.tracks.data;
+    main.innerHTML = `    <div class="Div-Titulo-Detalle-Album"><h1>Detalle del Album: ${datos.title}</h1></div>
 <div class="Logo-Duketo div">
     <img class="duki-tranquilo" src="${datos.cover_big}" alt="Imagen del Duketo">
 </div>
@@ -39,12 +39,13 @@ main.innerHTML = `    <div class="Div-Titulo-Detalle-Album"><h1>Detalle del Albu
     </ol>
 </div>
 </article>
-`
-for (let i = 0; i < pepe.length; i++) {
-   document.querySelector(".messi").innerText += ' ' + pepe[i].name + ' '
-}
-for (let i = 0; i < tutia.length; i++) {
-document.querySelector(".D10S").innerHTML += `<li><a href="./detalle-cancion.html?id=${tutia[i].id}">${tutia[i].title}</a></li>`
-}
-
-})
+`;
+    for (let i = 0; i < pepe.length; i++) {
+      document.querySelector(".messi").innerText += " " + pepe[i].name + " ";
+    }
+    for (let i = 0; i < tutia.length; i++) {
+      document.querySelector(
+        ".D10S"
+      ).innerHTML += `<li><a href="./detalle-cancion.html?id=${tutia[i].id}">${tutia[i].title}</a></li>`;
+    }
+  });
